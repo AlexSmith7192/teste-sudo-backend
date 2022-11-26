@@ -2,11 +2,24 @@
   "name": "teste-audo-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/api/server.js",
   "scripts": {
+    "start": "node .",
+    "dev": "nodemon .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Alex Smith",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dicom-parser": "^1.8.19",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "sequelize-cli": "^6.5.2"
+  }
 }

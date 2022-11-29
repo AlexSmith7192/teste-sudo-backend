@@ -9,9 +9,3 @@
 ```bash
 npm install
 ```
-
-3 - Inicialize o container docker do banco de dados:
-
-```bash
-docker-compose up -d
-```

@@ -7,14 +7,14 @@ const PatientModel = (sequelize, DataTypes) => {
       allowNull: false,
       unique: true,
       validate: {
-        notEmpty: true,
+        notEmpty: true
       }
     },
     PatientName: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        notEmpty: true,
+        notEmpty: true
       }
     },
     StudyInstanceUID: {
@@ -22,19 +22,19 @@ const PatientModel = (sequelize, DataTypes) => {
       allowNull: false,
       unique: true,
       validate: {
-        notEmpty: true,
+        notEmpty: true
       }
     },
     StudyDescription: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        notEmpty: true,
+        notEmpty: true
       }
-    },
-  });
+    }
+  })
 
-  return Patient;
-};
+  return Patient
+}
 
-module.exports = PatientModel;
+module.exports = PatientModel
